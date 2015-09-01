@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Glimpse
 {
@@ -9,6 +9,7 @@ namespace Glimpse
 
         public string Type { get; set; }
 
+        [JsonIgnore]
         public OperationStack Operations { get; } = new OperationStack();
     }
 }

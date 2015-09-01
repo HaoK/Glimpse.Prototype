@@ -43,6 +43,8 @@ namespace Glimpse
                 Indices = GetIndices(payload)
             };
 
+            message.Payload = _jsonSerializer.Serialize(message);
+
             return message;
         }
 
